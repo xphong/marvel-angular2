@@ -1,18 +1,21 @@
-<div class='search-character__form'>
-  <form (ngSubmit)="handleSearch()" [formGroup]="form">
-    <div class='ui action input'>
-      <input [formControl]="characterName"
-             name='characterName'
-             placeholder='Character Name'
-             type='text'
-             required
-             />
+<div class="characters fadeIn-animation">
+  <div class='search-character__form'>
+    <form (ngSubmit)="handleSearch()" [formGroup]="form">
+      <div class='ui action input'>
+        <input [formControl]="characterName"
+               name='characterName'
+               placeholder='Character Name'
+               type='text'
+               required
+               />
 
-        <button type="submit" class='ui icon pink button'>
-            <i class='search icon'></i>
-        </button>
-    </div>
-  </form>
+          <button type="submit" class='ui icon pink button'>
+              <i class='search icon'></i>
+          </button>
+      </div>
+    </form>
+  </div>
+
   <div *ngIf="serverError" class='ui message red'>
     Server Error
   </div>
