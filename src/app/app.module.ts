@@ -8,16 +8,14 @@ import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
-import { CharactersService } from './characters/shared/characters.service';
-
-const APP_PROVIDERS = [
-  CharactersService
-];
+import { CharactersService } from './shared/services/characters/characters.service';
+import { CharacterCardComponent } from './components/character-card/character-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharactersComponent
+    CharactersComponent,
+    CharacterCardComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +24,9 @@ const APP_PROVIDERS = [
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
-  providers: APP_PROVIDERS,
+  providers: [
+    CharactersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

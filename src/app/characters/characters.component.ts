@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 
-import { Character } from './shared/character.model';
-import { CharactersService } from './shared/characters.service';
+import { Character } from '../shared/models/character.model';
+import { CharactersService } from '../shared/services/characters/characters.service';
 
 @Component({
   selector: 'app-characters',
