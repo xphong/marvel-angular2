@@ -8,9 +8,10 @@ import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
+import { CharactersService } from './characters/shared/characters.service';
 
 const APP_PROVIDERS = [
-
+  CharactersService
 ];
 
 @NgModule({
