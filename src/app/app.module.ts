@@ -10,12 +10,14 @@ import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
 import { CharactersService } from './shared/services/characters/characters.service';
 import { CharacterCardComponent } from './components/character-card/character-card.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharactersComponent,
-    CharacterCardComponent
+    CharacterCardComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
