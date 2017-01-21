@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<div class='ui fixed menu'>
+  <div class='ui container'>
+    <div class='header item'>
+      Marvel App
+    </div>
+    <li class="item">
+      <a [routerLink]="['./']" [routerLinkActive]="['route--active']">Home</a>
+    </li>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
