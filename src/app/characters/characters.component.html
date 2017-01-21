@@ -20,6 +20,7 @@
     No characters found
   </div>
   <div *ngIf="!!characters.length" class='ui characters-list cards'>
-    <app-character-card *ngFor="let character of characters"></app-character-card>
+    <app-character-card *ngFor="let character of characters" [character]="character" class='ui card fadeIn-animation'>
+    </app-character-card>
   </div>
 </div>

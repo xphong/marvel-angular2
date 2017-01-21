@@ -39,6 +39,9 @@ body {
           transform: translate(-50%,-50%);
 }
 
+.ui.card, .ui.cards > .card {
+  width: 364px;
+}
 
 .powerlevel-image {
   width: 300px;
