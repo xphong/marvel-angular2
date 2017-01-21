@@ -3,11 +3,11 @@
     <div class='header item'>
       Marvel App
     </div>
-    <li [routerLinkActive]="['route--active']" class="item">
-      <a [routerLink]="['./']" >Home</a>
+    <li routerLinkActive="route--active" class="item" [routerLinkActiveOptions]="{exact:true}" >
+      <a routerLink="/" >Home</a>
     </li>
-    <li [routerLinkActive]="['route--active']" class="item">
-      <a [routerLink]="['./about']" >About</a>
+    <li routerLinkActive="route--active" class="item">
+      <a routerLink="/about" >About</a>
     </li>
   </div>
 </div>
