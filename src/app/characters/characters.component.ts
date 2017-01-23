@@ -13,6 +13,7 @@ export class CharactersComponent implements OnInit {
   public characters: Character[] = [];
   public serverError = false;
   public charactersError = false;
+  public isLoading = false;
 
   private form: FormGroup;
   private characterName = new FormControl('', Validators.required);
@@ -30,6 +31,9 @@ export class CharactersComponent implements OnInit {
   }
 
   handleSearch() {
+    this.characters = [];
+    this.isLoading = true;
+
     this.charactersService.fetchCharactersByName(this.form.value.characterName)
       .subscribe(data => {
         if (!!data.length) {
@@ -41,9 +45,12 @@ export class CharactersComponent implements OnInit {
           this.serverError = false;
           this.charactersError = true;
         }
+
+        this.isLoading = false;
       }, error => {
         this.serverError = true;
         this.charactersError = false;
+        this.isLoading = false;
       });
   }
 

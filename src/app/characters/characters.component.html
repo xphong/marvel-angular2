@@ -16,6 +16,7 @@
     </form>
   </div>
 
+  <app-spinner [isLoading]="isLoading"></app-spinner>
   <div *ngIf="serverError" class='ui message red'>
     Server Error
   </div>
