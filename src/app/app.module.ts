@@ -11,7 +11,7 @@ import { CharactersComponent } from './characters/characters.component';
 import { CharactersService } from './shared/services/characters/characters.service';
 import { CharacterCardComponent } from './components/character-card/character-card.component';
 import { AboutComponent } from './about/about.component';
-import { SpinnerComponent } from './components/spinner/spinner.component';
+import { SpinnerComponent } from './components/ui/spinner/spinner.component';
 import { NavComponent } from './components/ui/nav/nav.component';
 
 @NgModule({
