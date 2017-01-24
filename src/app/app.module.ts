@@ -12,6 +12,7 @@ import { CharactersService } from './shared/services/characters/characters.servi
 import { CharacterCardComponent } from './components/character-card/character-card.component';
 import { AboutComponent } from './about/about.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { NavComponent } from './components/ui/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     CharactersComponent,
     CharacterCardComponent,
     AboutComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
