@@ -17,12 +17,14 @@
   </div>
 
   <app-spinner [isLoading]="isLoading"></app-spinner>
+
   <div *ngIf="serverError" class='ui message red'>
     Server Error
   </div>
   <div *ngIf="charactersError" class='ui message orange'>
     No characters found
   </div>
+  
   <div *ngIf="!!characters.length" class='ui characters-list cards'>
     <app-character-card *ngFor="let character of characters" [character]="character" class='ui card fadeIn-animation'>
     </app-character-card>
