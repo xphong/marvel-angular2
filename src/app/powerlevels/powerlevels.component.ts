@@ -25,8 +25,7 @@ export class PowerlevelsComponent implements OnInit {
     this.powerlevelsService.fetchPowerlevels()
       .subscribe(data => {
         if (!!data.length) {
-          console.log(data);
-          
+          this.powerlevels = data;          
         }
 
         this.isLoading = false;
