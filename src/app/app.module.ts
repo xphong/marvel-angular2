@@ -13,8 +13,6 @@ import { CharacterCardComponent } from './components/character-card/character-ca
 import { AboutComponent } from './about/about.component';
 import { SpinnerComponent } from './components/ui/spinner/spinner.component';
 import { NavComponent } from './components/ui/nav/nav.component';
-import { PowerlevelsComponent } from './powerlevels/powerlevels.component';
-import { PowerlevelsService } from './shared/services/powerlevels/powerlevels.service';
 
 @NgModule({
   declarations: [
@@ -23,8 +21,7 @@ import { PowerlevelsService } from './shared/services/powerlevels/powerlevels.se
     CharacterCardComponent,
     AboutComponent,
     SpinnerComponent,
-    NavComponent,
-    PowerlevelsComponent
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -34,8 +31,7 @@ import { PowerlevelsService } from './shared/services/powerlevels/powerlevels.se
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [
-    CharactersService,
-    PowerlevelsService
+    CharactersService
   ],
   bootstrap: [AppComponent]
 })
