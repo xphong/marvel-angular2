@@ -1,26 +1,3 @@
 <div class="powerlevels fadeIn-animation">
-    <table *ngIf="!!powerlevels.length" class='ui table'>
-      <thead>
-        <tr>
-          <th>Character Name</th>
-          <th>Intelligence</th>
-          <th>Strength</th>
-          <th>Speed</th>
-          <th>Durability</th>
-          <th>Energy Projection</th>
-          <th>Fighting Ability</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let powerlevel of powerlevels">
-          <td>{{powerlevel.name}}</td>
-          <td>{{powerlevel.intelligence}}</td>
-          <td>{{powerlevel.strength}}</td>
-          <td>{{powerlevel.speed}}</td>
-          <td>{{powerlevel.durability}}</td>
-          <td>{{powerlevel.energyProjection}}</td>
-          <td>{{powerlevel.fightingAbility}}</td>
-        </tr>
-      </tbody>
-    </table>
+  <app-powerlevels-table *ngIf="!!powerlevels.length" [powerlevels]="powerlevels"></app-powerlevels-table>
 </div>

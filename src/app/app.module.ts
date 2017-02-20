@@ -15,6 +15,7 @@ import { SpinnerComponent } from './components/ui/spinner/spinner.component';
 import { NavComponent } from './components/ui/nav/nav.component';
 import { PowerlevelsComponent } from './powerlevels/powerlevels.component';
 import { PowerlevelsService } from './shared/services/powerlevels/powerlevels.service';
+import { PowerlevelsTableComponent } from './components/powerlevels-table/powerlevels-table.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PowerlevelsService } from './shared/services/powerlevels/powerlevels.se
     AboutComponent,
     SpinnerComponent,
     NavComponent,
-    PowerlevelsComponent
+    PowerlevelsComponent,
+    PowerlevelsTableComponent
   ],
   imports: [
     BrowserModule,
